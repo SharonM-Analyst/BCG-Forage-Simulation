@@ -7,10 +7,10 @@
 **Client:** PowerCo a major gas and electricity utility supplying small and medium-sized enterprises (SMEs).
 
 **Problem Statement:**
-The energy market has grown increasingly competitive, giving customers more options than ever before. PowerCo began experiencing elevated **customer churn** — the loss of customers who switch to rival energy providers. PowerCo engaged BCG's Data Science team to diagnose the root cause of this churn.
+The energy market has grown increasingly competitive, giving customers more options than ever before. PowerCo began experiencing elevated **customer churn**, the loss of customers who switch to rival energy providers. PowerCo engaged BCG's Data Science team to diagnose the root cause of this churn.
 
 **Core Hypothesis:**
-The Associate Director (AD) of the Data Science team proposed that churn may be driven by **price sensitivity** — how much pricing is a factor in a customer's decision to stay with or leave PowerCo.
+The Associate Director (AD) of the Data Science team proposed that churn may be driven by **price sensitivity**, how much pricing is a factor in a customer's decision to stay with or leave PowerCo.
 
 **Objective:**
 Test the hypothesis that churn is driven by customers' price sensitivity by modelling churn probabilities and deriving the effect of prices on churn rates.
