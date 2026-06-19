@@ -85,7 +85,7 @@ The case study followed a structured five-step analytical workflow:
 |---|---|
 | **Language** | Python |
 | **Data Manipulation** | pandas, NumPy |
-| **Machine Learning** | scikit-learn (Logistic Regression, Random Forest, model evaluation) |
+| **Machine Learning** | scikit-learn (Logistic Regression, Random Forest, model evaluation) or pycaret(multiple testing of models)|
 | **Exploratory Data Analysis** | matplotlib, seaborn, plotly |
 | **Feature Engineering** | Custom price sensitivity metrics, rolling statistics |
 | **Model Evaluation** | AUC-ROC, confusion matrix, classification report |
