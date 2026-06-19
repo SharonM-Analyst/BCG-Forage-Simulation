@@ -1,10 +1,10 @@
-# PowerCo Customer Churn Analysis — Case Study README
+# PowerCo Customer Churn Analysis
 
 ---
 
 ## Overview
 
-**Client:** PowerCo — a major gas and electricity utility supplying small and medium-sized enterprises (SMEs).
+**Client:** PowerCo a major gas and electricity utility supplying small and medium-sized enterprises (SMEs).
 
 **Problem Statement:**
 The energy market has grown increasingly competitive, giving customers more options than ever before. PowerCo began experiencing elevated **customer churn** — the loss of customers who switch to rival energy providers. PowerCo engaged BCG's Data Science team to diagnose the root cause of this churn.
@@ -15,7 +15,14 @@ The Associate Director (AD) of the Data Science team proposed that churn may be 
 **Objective:**
 Test the hypothesis that churn is driven by customers' price sensitivity by modelling churn probabilities and deriving the effect of prices on churn rates.
 
+<!-- MLOps Workflow -->
+<p align="center">
+  <a href="chustomer_churn.html">
+    <img src="https://img.shields.io/badge/PowerCo%20Customer Churn-Prediction Model-blue?style=for-the-badge" />
+  </a>
+</p>
 
+![Customer Churn](https://github.com/SharonM-Analyst/BCG-Forage-Simulation/blob/3910bb50c1e6c2cc59572d0bb1a317ef0738a6a1/2.%20Project%20Planning/Screenshot%202026-06-19%20053627.png)
 
 ---
 
@@ -25,7 +32,7 @@ To build the models, three key data sources were identified:
 
 | Dataset | Description |
 |---|---|
-| **Customer Data** | Client characteristics — industry, historical electricity consumption, date joined, etc. |
+| **Customer Data** | Client characteristics:industry, historical electricity consumption, date joined, etc. |
 | **Churn Data** | Binary indicator of whether a customer has churned |
 | **Historical Price Data** | Prices charged to each customer for electricity and gas at granular time intervals |
 
@@ -35,27 +42,27 @@ To build the models, three key data sources were identified:
 
 The case study followed a structured five-step analytical workflow:
 
-### Step 1 — Define Price Sensitivity
+### Step 1: Define Price Sensitivity
 - Establish a clear, quantifiable definition of price sensitivity
 - Calculate price sensitivity metrics per customer using the historical price data
 
-### Step 2 — Data Preparation & Feature Engineering
+### Step 2: Data Preparation & Feature Engineering
 - Clean and merge the customer, churn, and pricing datasets
 - Engineer relevant features including price change rates, consumption patterns, contract duration, and customer segments
 - Handle missing values, outliers, and class imbalance in the churn target variable
 
-### Step 3 — Hypothesis Testing via Binary Classification
+### Step 3: Hypothesis Testing via Binary Classification
 - Frame churn prediction as a **binary classification problem** (churned = 1, retained = 0)
 - Train and evaluate multiple models:
-  - **Logistic Regression** — interpretable baseline
-  - **Random Forest** — captures non-linear relationships and feature interactions
+  - **Logistic Regression**- interpretable baseline
+  - **Random Forest**- captures non-linear relationships and feature interactions
 
-### Step 4 — Model Selection
+### Step 4: Model Selection
 - Evaluate models on accuracy metrics: AUC-ROC, precision, recall, F1-score
-- Factor in **explainability** alongside performance — critical for client-facing recommendations
+- Factor in **explainability** alongside performance- critical for client-facing recommendations
 - Select the best-performing model that balances predictive power with interpretability
 
-### Step 5 — Quantify Price Sensitivity's Effect on Churn
+### Step 5: Quantify Price Sensitivity's Effect on Churn
 - Use the trained model to extrapolate the extent to which price sensitivity drives churn
 - Derive feature importance scores and partial dependence plots to isolate the price signal
 - Translate model outputs into actionable business insights for PowerCo
@@ -79,7 +86,7 @@ The case study followed a structured five-step analytical workflow:
 | **Language** | Python |
 | **Data Manipulation** | pandas, NumPy |
 | **Machine Learning** | scikit-learn (Logistic Regression, Random Forest, model evaluation) |
-| **Exploratory Data Analysis** | matplotlib, seaborn, PLOTLY |
+| **Exploratory Data Analysis** | matplotlib, seaborn, plotly |
 | **Feature Engineering** | Custom price sensitivity metrics, rolling statistics |
 | **Model Evaluation** | AUC-ROC, confusion matrix, classification report |
 | **Notebook Environment** | Jupyter Notebook / Databricks |
